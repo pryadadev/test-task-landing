@@ -1,3 +1,0 @@
-import{r as e}from"./index-04e8b475.js";const n=t=>e.createElement("svg",{id:"Layer_1",xmlns:"http://www.w3.org/2000/svg",xmlnsXlink:"http://www.w3.org/1999/xlink",x:"0px",y:"0px",viewBox:"0 0 42 42",style:{enableBackground:"new 0 0 42 42"},xmlSpace:"preserve",...t},e.createElement("style",{type:"text/css"},`\r
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}\r
-`),e.createElement("path",{className:"st0",d:"M23.8,2.6l15.6,15.6c1.6,1.6,1.6,4.1,0,5.7L23.8,39.4c-1.6,1.6-4.1,1.6-5.7,0L2.6,23.8c-1.6-1.6-1.6-4.1,0-5.7 L18.2,2.6C19.7,1.1,22.3,1.1,23.8,2.6z"})),r="/test-task-landing/assets/icon_rect-a0115b18.svg";export{n as ReactComponent,r as default};
