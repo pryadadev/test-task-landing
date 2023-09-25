@@ -5,6 +5,8 @@ import MobileFeaturesSection from "@components/MobileFeaturesSection/MobileFeatu
 import DailyDealsSection from "@components/DailyDealsSection/DailyDealsSection.jsx";
 import PartnerSection from "@components/PartnerSection/PartnerSection.jsx";
 import Footer from "@components/Footer/Footer.jsx";
+import imgUrlDesktopLanding from "@assets/SG_landing.jpg";
+import imgUrlMobileLanding from "@assets/SG_mlanding.jpg";
 
 const App = () => {
   return (
@@ -20,7 +22,7 @@ const App = () => {
       {/*  При ширине экрана соответствующем картинке - 1600px  */}
       {/*  Для активации снять галочку у "display: none" в браузере  */}
       <img
-        src="src/assets/SG_landing.jpg"
+        src={imgUrlDesktopLanding}
         alt=""
         style={{
           display: "none",
@@ -38,7 +40,7 @@ const App = () => {
       {/*  При ширине экрана соответствующем картинке - 750px  */}
       {/*  Для активации снять галочку у "display: none" в браузере  */}
       <img
-        src="src/assets/SG_mlanding.jpg"
+        src={imgUrlMobileLanding}
         alt=""
         style={{
           display: "none",
