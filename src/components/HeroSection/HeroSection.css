@@ -1,7 +1,6 @@
 .hero-section {
   height: 810px;
   padding-top: 35px;
-  background: url("src/assets/bg.jpg") no-repeat center/cover;
   position: relative;
 }
 .hero-section__wrapper {

@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "@assets/shopguide.svg";
 import { ReactComponent as MarketplaceIOS } from "@assets/download_ios.svg";
 import { ReactComponent as MarketplaceAndroid } from "@assets/download_android.svg";
 import { useEffect } from "react";
+import imgUrlPopup from "@assets/only_popup.svg";
 
 
 const HeroHeading = () => {
@@ -24,7 +25,9 @@ const HeroHeading = () => {
   return (
     <div className="hero-heading">
       <div className="hero-heading__bubble">
-        <div className="hero-heading__bubble-icon">Только лучшие акции</div>
+        <div className="hero-heading__bubble-icon" style={{background: `url(${imgUrlPopup}) no-repeat 50% 50% / cover`}}>
+          Только лучшие акции
+        </div>
       </div>
       <Logo className="hero-heading__logo" />
       <div className="hero-heading__download">

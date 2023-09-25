@@ -1,8 +1,10 @@
 import "./Footer.css";
+import imgUrlBackground from "@assets/bg.jpg";
+import SvgIcon from "@components/SvgIcon/SvgIcon.jsx";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="footer">
+    <footer id="footer" className="footer" style={{backgroundImage: `url(${imgUrlBackground})`}}>
       <div className="footer__wrapper">
         <div className="footer__legal">
           <div className="footer__legal__copyright">
@@ -16,10 +18,9 @@ const Footer = () => {
           </a>
         </div>
         <a className="footer__contact-us" href="#contact-us">
-          <img
-            className="footer__contact-us__icon"
-            src="src/assets/contact.svg"
-            alt=""
+          <SvgIcon
+            iconName={"contact"}
+            svgStyle="footer__contact-us__icon"
           />
           <span className="footer__contact-us__label">
             Связаться с нами

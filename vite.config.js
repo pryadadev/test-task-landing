@@ -16,6 +16,5 @@ export default defineConfig({
     },
   },
   base: "/test-task-landing/",
-  assetsInclude: ["**/*.png", "**/*.svg", "**/*.jpg"],
   plugins: [react(), svgr()],
 });

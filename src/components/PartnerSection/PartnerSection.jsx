@@ -1,18 +1,24 @@
 import "./PartnerSection.css";
-import PartnerItem from "./PartnerItem/PartnerItem.jsx";
 import { ReactComponent as ArrowLeft } from "@assets/arrow_left.svg";
 import { ReactComponent as ArrowRight } from "@assets/arrow_right.svg";
+import imgUrlPrada from "@assets/logos/logo_prada.png";
+import imgUrlNike from "@assets/logos/logo_nike.png";
+import imgUrlCym from "@assets/logos/logo_cym.png";
+import imgUrlAdidas from "@assets/logos/logo_adidas.png";
+import imgUrlGum from "@assets/logos/logo_gum.png";
+import imgUrlZara from "@assets/logos/logo_zara.png";
+import imgUrlCarlo from "@assets/logos/logo_carlo.png";
 
 const PartnerSection = () => {
 
   const logos = [
-    {image: "logo_prada.png", name: "Prada"},
-    {image: "logo_nike.png", name: "Nike"},
-    {image: "logo_cym.png", name: "ЦУМ"},
-    {image: "logo_adidas.png", name: "Adidas"},
-    {image: "logo_gum.png", name: "ГУМ"},
-    {image: "logo_zara.png", name: "Zara"},
-    {image: "logo_carlo.png", name: "Carlo Pazolini"}
+    {imageUrl: imgUrlPrada, name: "Prada"},
+    {imageUrl: imgUrlNike, name: "Nike"},
+    {imageUrl: imgUrlCym, name: "ЦУМ"},
+    {imageUrl: imgUrlAdidas, name: "Adidas"},
+    {imageUrl: imgUrlGum, name: "ГУМ"},
+    {imageUrl: imgUrlZara, name: "Zara"},
+    {imageUrl: imgUrlCarlo, name: "Carlo Pazolini"}
   ];
 
   return (
@@ -25,9 +31,11 @@ const PartnerSection = () => {
             <ArrowLeft className="partner-section__logos-arrow partner-section__logos-arrow-left"/>
             <div className="partner-section__logos-container">
               {logos.map((item, index) =>
-                <PartnerItem
-                  image={item.image}
-                  name={item.name}
+                <img
+                  className="partner-item"
+                  src={item.imageUrl}
+                  alt={item.name}
+                  title={item.name}
                   key={index}
                 />
               )}

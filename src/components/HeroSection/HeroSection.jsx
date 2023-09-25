@@ -2,7 +2,9 @@ import "./HeroSection.css";
 import SocialButtons from "@components/SocialButtons/SocialButtons.jsx";
 import HeroHeading from "@components/HeroSection/HeroHeading/HeroHeading.jsx";
 import imgUrlPhone from "@assets/phone1.png";
-import {useEffect} from "react";
+import imgUrlBackground from "@assets/bg.jpg";
+import { useEffect } from "react";
+import SvgIcon from "@components/SvgIcon/SvgIcon.jsx";
 
 const HeroSection = () => {
 
@@ -15,7 +17,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" style={{background: `url(${imgUrlBackground}) no-repeat center/cover`}}>
       <div className="hero-section__wrapper">
         <div className="hero-section__buttons">
           <SocialButtons />
@@ -37,10 +39,9 @@ const HeroSection = () => {
         <div className="hero-section__scroll-down-button__label">
           Вниз
         </div>
-        <img
-          className="hero-section__scroll-down-button__arrow"
-          src="src/assets/arrow_down.svg"
-          alt=""
+        <SvgIcon
+          iconName="arrow_down"
+          svgStyle="hero-section__scroll-down-button__arrow"
         />
         <div className="hero-section__scroll-down-button__label">
           Вниз

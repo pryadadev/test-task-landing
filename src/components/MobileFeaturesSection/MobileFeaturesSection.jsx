@@ -1,6 +1,9 @@
 import "./MobileFeaturesSection.css";
 import imgUrlPhone from "@assets/phone2.png";
 import imgUrlActions from "@assets/phone2_actions.jpg";
+import imgUrlArrowLeft from "@assets/arrow_left.svg";
+import imgUrlArrowRight from "@assets/arrow_right.svg";
+import SvgIcon from "@components/SvgIcon/SvgIcon.jsx";
 
 const MobileFeaturesSection = () => {
   return (
@@ -20,7 +23,13 @@ const MobileFeaturesSection = () => {
         </div>
         <div className="mobile-features-section__header">Избранное</div>
         <div className="mobile-features-section__header mobile-features-section__header--selected">
+          <div className="mobile-features-section__header--selected__left-arrow">
+            <div style={{background: `url(${imgUrlArrowLeft}) no-repeat center/cover`}}></div>
+          </div>
           Профиль акции
+          <div className="mobile-features-section__header--selected__right-arrow">
+            <div style={{background: `url(${imgUrlArrowRight}) no-repeat center/cover`}}></div>
+          </div>
         </div>
         <div className="mobile-features-section__header">Подписки</div>
         <div className="mobile-features-section__header">Карта</div>
