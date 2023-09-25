@@ -15,7 +15,6 @@ export default defineConfig({
       "@hooks": path.resolve(__dirname, "./src/hooks"),
     },
   },
-  base: "/test-task-landing",
-  assetsInclude: ["assets/*.png", "assets/*.svg", "assets/*.jpg"],
+  base: "/test-task-landing/",
   plugins: [react(), svgr()],
 });
