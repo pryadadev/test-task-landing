@@ -6,6 +6,8 @@
 
 ### Демо: [https://pryadadev.github,io/test-task-landing](https://pryadadev.github,io/test-task-landing)
 
+### Stack: React, JavaScript, SCSS, Vite.
+
 ### Время выполнения задания
 - Точного времени замерить не получилось.
 - Примерное время на подготовку перед началом (теория): 1 час
