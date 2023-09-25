@@ -1,0 +1,182 @@
+.partner-section {
+  height: 573px;
+}
+.partner-section__wrapper {
+  max-width: 1304px;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+.partner-section__header {
+  height: 133px;
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ea6459;
+  padding-left: 3px;
+  padding-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partner-section__logos {
+  height: 186px;
+  background-color: #ea6459;
+}
+.partner-section__logos .partner-section__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.partner-section__logos-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.partner-section__logos-arrow {
+  height: 36px;
+  width: 36px;
+  padding: 6px 6px 6px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: opacity 150ms ease-out;
+}
+@media (hover: hover), (-ms-high-contrast: none) {
+  .partner-section__logos-arrow:hover {
+    opacity: 1;
+  }
+}
+.partner-section__logos-arrow-left {
+  padding-right: 12px;
+}
+.partner-section__logos-arrow-right {
+  padding-left: 12px;
+}
+.partner-section__join-us {
+  height: 254px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partner-section__join-us-text {
+  margin-top: 44px;
+  font-family: FuturaBookC, sans-serif;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.partner-section__join-us-button {
+  margin-top: 36px;
+  padding-top: 3px;
+  width: 360px;
+  height: 64px;
+  border: 4px solid #29d3d2;
+  border-radius: 10px;
+  background-color: #29d3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+}
+@media (hover: hover), (-ms-high-contrast: none) {
+  .partner-section__join-us-button:hover {
+    background-color: white;
+    color: #29d3d2;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1304px) {
+  .partner-section__logos-container {
+    overflow-x: scroll;
+    overflow-y: visible;
+    gap: 45px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .partner-section__logos-container::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .partner-section__header {
+    height: 119px;
+    padding-top: 26px;
+  }
+  .partner-section__logos {
+    height: 217px;
+    overflow-x: scroll;
+  }
+  .partner-section__logos-container {
+    width: 750px;
+    padding: 0 50px;
+    gap: 36px;
+  }
+  .partner-section__logos-container :first-child,
+  .partner-section__logos-container :last-child {
+    display: none;
+  }
+  .partner-section__logos-arrow {
+    display: none;
+  }
+  .partner-section__join-us {
+    height: fit-content;
+    padding: 0 14px 66px 12px;
+  }
+  .partner-section__join-us-text {
+    margin-top: 48px;
+    font-size: 32px;
+    letter-spacing: 0.028em;
+    line-height: 1.42;
+  }
+  .partner-section__join-us-button {
+    margin-top: 50px;
+    transform: scale(1.226, 1.16);
+    font-size: 26px;
+    letter-spacing: 0.014em;
+    padding-bottom: 2px;
+  }
+}
+@media (max-width: 580px) {
+  .partner-section__header {
+    font-size: 28px;
+  }
+  .partner-section__logos {
+    height: 180px;
+  }
+  .partner-section__logos-container {
+    padding: 0 12px;
+  }
+  .partner-section__join-us {
+    height: fit-content;
+    padding: 0 14px 66px 12px;
+  }
+  .partner-section__join-us-text {
+    font-size: 24px;
+  }
+  .partner-section__join-us-button {
+    width: 260px;
+    margin-top: 50px;
+    transform: scale(1, 0.9);
+    font-size: 20px;
+    letter-spacing: 0.014em;
+    padding-bottom: 2px;
+  }
+}
+
+/*# sourceMappingURL=PartnerSection.css.map */

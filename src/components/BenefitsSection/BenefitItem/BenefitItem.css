@@ -1,0 +1,60 @@
+.benefit-item {
+  width: 278px;
+  height: 444px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+@media (hover: hover), (-ms-high-contrast: none) {
+  .benefit-item:hover .benefit-item__icon {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+.benefit-item__icon {
+  height: 100px;
+  width: 100px;
+  color: #B6D5DC;
+  transition: transform 200ms ease-out;
+}
+.benefit-item__header {
+  margin-top: 18px;
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.benefit-item__description {
+  margin-top: 9px;
+  font-family: FuturaBookC, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1196px) {
+  .benefit-item {
+    width: 94%;
+    height: 270px;
+    padding-top: 9px;
+  }
+  .benefit-item__icon {
+    height: 125px;
+    width: 125px;
+  }
+  .benefit-item__header {
+    margin-top: 6px;
+  }
+  .benefit-item__description {
+    margin-top: 5px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 350px) {
+  .benefit-item {
+    height: 290px;
+  }
+}
+
+/*# sourceMappingURL=BenefitItem.css.map */

@@ -1,0 +1,97 @@
+.hero-heading {
+  margin-top: 236px;
+  margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-family: FuturaBookC, sans-serif;
+  user-select: none;
+
+  &__bubble {
+    align-self: flex-end;
+    &-icon {
+      height: 36px;
+      width: 161px;
+      background: url("src/assets/only_popup.svg") no-repeat 50% 50% / cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 8px;
+      color: white;
+      font-size: 12.5px;
+      letter-spacing: 0.025em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo {
+    width: 400.05px;
+    height: 51.38px;
+    margin-top: 10px;
+  }
+
+  &__download {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-separator {
+      width: 142px;
+      border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
+    }
+    &-label {
+      color: white;
+      font-size: 16px;
+      letter-spacing: 0.06em;
+      line-height: 1;
+    }
+  }
+
+  &__marketplace {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--ios,
+    &--android {
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      height: 56px;
+      width: 191px;
+      transition: background-color 150ms ease-out;
+
+      @media (hover: hover), (-ms-high-contrast:none) {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+
+    &--ios {
+      margin-left: -1px;
+    }
+
+    a {
+      height: 56px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1040px) {
+  .hero-heading {
+    margin: 236px auto 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-heading {
+    margin: 0;
+    padding-bottom: 7px;
+
+    &__download-label {
+      font-size: 22px;
+    }
+  }
+}

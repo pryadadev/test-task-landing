@@ -1,0 +1,16 @@
+.svg-icon {
+
+  &__loader {
+    width: 2rem;
+    height: 2rem;
+    background-color: #94a3b8;
+    border-radius: 9999px;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}

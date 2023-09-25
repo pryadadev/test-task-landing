@@ -1,0 +1,20 @@
+.social-button__rect {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  background-image: url("src/assets/icon_rect.svg");
+  border-radius: 6px;
+  transition: background-color 100ms ease-out;
+}
+@media (hover: hover), (-ms-high-contrast: none) {
+  .social-button__rect:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+.social-button__icon {
+  width: 39px;
+  height: 39px;
+  transform: scale(1.04, 1.04);
+}
+
+/*# sourceMappingURL=SocialButton.css.map */

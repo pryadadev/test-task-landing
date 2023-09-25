@@ -1,0 +1,118 @@
+.daily-deals-section__empty-space {
+  height: 314px;
+}
+.daily-deals-section__background {
+  height: 408px;
+  background-color: rgb(234, 234, 234);
+}
+.daily-deals-section__wrapper {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.daily-deals-section__text-box {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-top: 70px;
+  padding-left: 136px;
+}
+.daily-deals-section__header {
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 32px;
+  line-height: 0.98;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: black;
+  margin-left: -2px;
+}
+.daily-deals-section__description {
+  font-family: FuturaBookC, sans-serif;
+  font-size: 20px;
+  line-height: 1.31;
+  margin-left: -1px;
+  color: black;
+}
+.daily-deals-section__mobile1, .daily-deals-section__mobile2 {
+  position: absolute;
+}
+.daily-deals-section__mobile1 {
+  right: 313px;
+  bottom: 0;
+}
+.daily-deals-section__mobile2 {
+  right: 47px;
+  bottom: 52px;
+}
+
+@media (max-width: 1250px) {
+  .daily-deals-section__mobile1, .daily-deals-section__mobile2 {
+    transform: scale(0.6);
+  }
+  .daily-deals-section__mobile1 {
+    right: 172px;
+  }
+  .daily-deals-section__mobile2 {
+    right: -3px;
+  }
+}
+@media (max-width: 1075px) {
+  .daily-deals-section__mobile1, .daily-deals-section__mobile2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .daily-deals-section {
+    height: fit-content;
+  }
+  .daily-deals-section__background {
+    height: fit-content;
+    background-color: white;
+  }
+  .daily-deals-section__text-box {
+    width: 100%;
+    padding: 30px 56px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .daily-deals-section__header {
+    font-size: 36px;
+    padding-left: 17px;
+  }
+  .daily-deals-section__description {
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0.026em;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .daily-deals-section__description__second-paragraph {
+    width: 90%;
+  }
+  .daily-deals-section__empty-space, .daily-deals-section__mobile1, .daily-deals-section__mobile2 {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  .daily-deals-section__header {
+    font-size: 28px;
+  }
+  .daily-deals-section__text-box {
+    padding: 30px 12px;
+  }
+  .daily-deals-section__description {
+    font-size: 20px;
+  }
+  .daily-deals-section__description__second-paragraph {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=DailyDealsSection.css.map */

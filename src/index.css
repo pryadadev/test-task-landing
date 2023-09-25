@@ -1,0 +1,61 @@
+:root {
+  overflow-x: hidden;
+
+  font-family: FuturaDemiC, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  user-select: none;
+}
+
+@font-face {
+  font-family: FuturaDemiC;
+  src:
+    local("FuturaDemiC"),
+    url(./fonts/futurademic-webfont.eot) format("embedded-opentype"),
+    url(./fonts/futurademic-webfont.woff2) format("woff2"),
+    url(./fonts/futurademic-webfont.woff) format("woff"),
+    url(./fonts/futurademic-webfont.ttf) format("truetype"),
+    url(./fonts/futurademic-webfont.svg) format("svg");
+}
+
+@font-face {
+  font-family: FuturaBookC;
+  src:
+    local("FuturaBookC"),
+    url(./fonts/futurabookc-webfont.eot) format("embedded-opentype"),
+    url(./fonts/futurabookc-webfont.woff2) format("woff2"),
+    url(./fonts/futurabookc-webfont.woff) format("woff"),
+    url(./fonts/futurabookc-webfont.ttf) format("truetype"),
+    url(./fonts/futurabookc-webfont.svg) format("svg");
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src:
+    local("MyriadPro"),
+    url("fonts/myriadpro-regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src:
+      local("MyriadPro"),
+      url("fonts/myriadpro-semibold.otf") format("opentype");
+  font-weight: 600;
+}
