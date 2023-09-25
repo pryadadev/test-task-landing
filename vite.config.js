@@ -12,9 +12,10 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "./src/assets"),
       "@components": path.resolve(__dirname, "./src/components"),
       "@fonts": path.resolve(__dirname, "./src/fonts"),
-      "@hooks": path.resolve(__dirname, "./src/hooks")
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
     },
   },
   base: "/test-task-landing",
+  assetsInclude: ["**/*.png", "**/*.svg", "**/*.jpg"],
   plugins: [react(), svgr()],
 });
