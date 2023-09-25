@@ -4,7 +4,7 @@
 
 ![Пример картинки](example.png)
 
-### Демо: [https://pryadadev.github,io/test-task-landing](https://pryadadev.github,io/test-task-landing)
+### Демо: [https://pryadadev.github.io/test-task-landing](https://pryadadev.github.io/test-task-landing)
 
 ### Stack: React, JavaScript, SCSS, Vite.
 
